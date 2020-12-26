@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ambiente" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8eb5019b-df88-4ca9-9d9f-41f3e331482a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="controlePatrimonio"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tagAmbiente" class="java.lang.String">
+		<fieldDescription><![CDATA[tagAmbiente]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Long">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="local" class="java.lang.String">
+		<fieldDescription><![CDATA[local]]></fieldDescription>
+	</field>
+	<field name="nomeAmbiente" class="java.lang.String">
+		<fieldDescription><![CDATA[nomeAmbiente]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="544" height="30" uuid="83ee6639-7fd3-45a3-b46f-f956d4dc068c"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Lista dos Ambientes Cadastrados]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="30" height="20" uuid="7b440a1b-d9e2-4c55-92d7-c4c46a8d0242">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e72738b-d196-473b-9f04-52f0df6e9f91"/>
+				</reportElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="0" width="100" height="20" uuid="f6afb55d-ac70-4634-9c54-3c73a7b6bbf0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8c3c98a1-ceb9-4c1b-81ac-963c4c62bb1f"/>
+				</reportElement>
+				<text><![CDATA[nomeAmbiente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="0" width="100" height="20" uuid="a78065b6-cc75-4733-8ffa-50c73b97c51a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f03b9a0e-4d9f-4ad5-99e3-e71ed52ad7d9"/>
+				</reportElement>
+				<text><![CDATA[tagAmbiente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="100" height="20" uuid="8d4b7a19-8f41-416d-9c1b-11b70799dd5b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2a56947c-b8fa-4b07-8a11-38a740d06ce8"/>
+				</reportElement>
+				<text><![CDATA[local]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="30" height="30" uuid="fb7f0fea-7e82-4d23-a31b-f45e125775f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e72738b-d196-473b-9f04-52f0df6e9f91"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="0" width="100" height="30" uuid="098c1bf9-fe4a-463e-aa5f-14c436cf365b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8c3c98a1-ceb9-4c1b-81ac-963c4c62bb1f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nomeAmbiente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="100" height="30" uuid="5412a0de-c9dd-4b78-a127-597c5f108302">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f03b9a0e-4d9f-4ad5-99e3-e71ed52ad7d9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{tagAmbiente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="7d2c933b-862c-46fe-937b-a612b2fffba9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2a56947c-b8fa-4b07-8a11-38a740d06ce8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{local}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
